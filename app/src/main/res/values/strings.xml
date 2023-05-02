@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Login_SignUp_UI</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="editText_email">Email</string>
+    <string name="hint_password">password</string>
+    <string name="tvMessage1">To access all the features</string>
+    <string name="checkBox_text">I agree to all the <font color="#0D2841"><b>Terms and Conditions</b></font></string>
+    <string name="log_in">Log In</string>
+</resources>
