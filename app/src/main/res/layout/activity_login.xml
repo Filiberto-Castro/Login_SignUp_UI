@@ -90,6 +90,7 @@
         android:textSize="24sp"
         android:textAllCaps="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:onClick="btnSignUp"
         app:layout_constraintTop_toBottomOf="@+id/checkBox"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
