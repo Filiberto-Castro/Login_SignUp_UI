@@ -1,163 +1,222 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <TextView
-        android:id="@+id/tvSign_Up"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:layout_marginStart="@dimen/marginX"
-        android:text="@string/sign_up"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="@color/color_primary"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/tvMessage1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="@dimen/marginX"
-        android:text="@string/tvMessage1"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="@color/color_primary"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvSign_Up" />
-
-    <EditText
-        android:id="@+id/editText_email"
+        android:id="@+id/text_header"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="@dimen/margin_large"
-        android:layout_marginStart="@dimen/marginX"
-        android:layout_marginEnd="@dimen/marginX"
-        android:hint="@string/editText_email"
-        android:textColorHint="@color/color_primary"
-        android:inputType="textEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/tvMessage1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
-
-    <EditText
-        android:id="@+id/editText_password"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_normal"
-        android:layout_marginStart="@dimen/marginX"
-        android:layout_marginEnd="@dimen/marginX"
-        android:hint="@string/hint_password"
-        android:textColorHint="@color/color_primary"
-        android:inputType="textPassword"
-        app:layout_constraintTop_toBottomOf="@+id/editText_email"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/marginX"
-        android:text="@string/checkBox_text"
+        android:text="@string/text_header"
         android:textColor="@color/color_primary"
-        app:layout_constraintTop_toBottomOf="@+id/editText_password"
-        app:layout_constraintStart_toStartOf="parent"
-        />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button_signUp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/marginX"
-        android:layout_marginEnd="@dimen/marginX"
-        android:layout_marginTop="@dimen/margin_large"
-        android:background="@drawable/background_active_button"
-        android:text="@string/sign_up"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        android:textAllCaps="false"
+        android:gravity="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        android:textSize="28sp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button_logIn"
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider_header"
         android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="@dimen/margin_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_header" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_marginStart="@dimen/marginX"
+        android:text="@string/text_title"
+        android:textColor="@color/color_secodary"
+        android:textSize="24sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider_header"/>
+
+    <TextView
+        android:id="@+id/text_subtitle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/marginX"
-        android:layout_marginEnd="@dimen/marginX"
-        android:layout_marginTop="@dimen/margin_normal"
-        android:background="@drawable/background_inactive_button"
-        android:text="@string/log_in"
+        android:text="@string/text_title"
         android:textColor="@color/color_primary"
         android:textSize="24sp"
-        android:textAllCaps="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintTop_toBottomOf="@+id/button_signUp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-
-    <TextView
-        android:id="@+id/tvOr"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_normal"
-        android:text="Or"
-        android:textColor="@color/color_primary"
-        app:layout_constraintTop_toBottomOf="@+id/button_logIn"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/text_title"/>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:id="@+id/linearLayout_note"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_normal"
         android:layout_marginStart="@dimen/marginX"
         android:layout_marginEnd="@dimen/marginX"
-        android:layout_marginBottom="@dimen/margin_large"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/tvOr"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/text_subtitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_margin="@dimen/margin_normal"
-            android:background="@drawable/background_icon"
-            android:drawableStart="@drawable/icon_flight"
-            android:padding="12dp"/>
+        <LinearLayout
+            android:id="@+id/linearLayout_note_content_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:orientation="horizontal">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_margin="@dimen/margin_normal"
-            android:background="@drawable/background_icon"
-            android:drawableStart="@drawable/icon_flight"
-            android:padding="12dp"/>
+            <LinearLayout
+                android:layout_width="@dimen/widht_text_note"
+                android:layout_height="@dimen/height_text_note"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_normal"
+                android:background="@drawable/background_secondary">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_margin="@dimen/margin_normal"
-            android:background="@drawable/background_icon"
-            android:drawableStart="@drawable/icon_flight"
-            android:padding="12dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:text="Title"
+                    android:textColor="@color/color_primary"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbarThumbVertical="@null">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/text_note_one"
+                        />
+
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/widht_text_note"
+                android:layout_height="@dimen/height_text_note"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical"
+                android:padding="8dp"
+                android:background="@drawable/background_secondary">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:text="Title"
+                    android:textColor="@color/color_primary"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbarThumbVertical="@null">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/text_note_one"
+                        />
+
+                </ScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_note_content_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/widht_text_note"
+                android:layout_height="@dimen/height_text_note"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_normal"
+                android:background="@drawable/background_secondary">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:text="Title"
+                    android:textColor="@color/color_primary"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbarThumbVertical="@null">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/text_note_one"
+                        />
+
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/widht_text_note"
+                android:layout_height="@dimen/height_text_note"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_normal"
+                android:background="@drawable/background_secondary">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:text="Title"
+                    android:textColor="@color/color_primary"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbarThumbVertical="@null">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/text_note_one"
+                        />
+
+                </ScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

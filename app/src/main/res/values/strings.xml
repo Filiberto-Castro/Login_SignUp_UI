@@ -6,4 +6,8 @@
     <string name="tvMessage1">To access all the features</string>
     <string name="checkBox_text">I agree to all the <font color="#0D2841"><b>Terms and Conditions</b></font></string>
     <string name="log_in">Log In</string>
+    <string name="text_title">Welcome!</string>
+    <string name="text_header">Annotations</string>
+    <string name="text_note_one">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce suscipit ac sapien sit amet ultricies. Praesent ac nisl diam. Donec lacinia varius mauris id luctus. Nam sagittis fermentum imperdiet. Donec sit amet tincidunt justo. Integer vestibulum, elit vitae tempor feugiat, tellus sapien consectetur neque, eu vulputate elit elit sit amet elit.</string>
+
 </resources>
