@@ -218,5 +218,28 @@
 
     </LinearLayout>
 
+    <EditText
+        android:id="@+id/editTextReplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginX"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Your Reply Here"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_note"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reply"
+        android:onClick="btnReply"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_note"
+        app:layout_constraintStart_toEndOf="@+id/editTextReplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
